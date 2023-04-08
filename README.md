@@ -3,7 +3,7 @@
 # Comandos pendientes:
 - [x] cd
 - [x] ls
-- [ ] mkdir
+- [x] mkdir
 - [ ] rm
 - [ ] rm -r
 - [ ] help
@@ -11,7 +11,7 @@
 - [ ] cp
 - [ ] cat
 - [ ] touch 
-- [ ] pwd
+- [x] pwd
 - [x] exit
 
 # Otros pendientes:

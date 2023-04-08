@@ -3,8 +3,9 @@ use std::io::{self, Write};
 mod commands {
     pub mod ls;
     pub mod cd;
+    pub mod mkdir;
+    pub mod pwd;
 }
-
 
 fn main() -> std::io::Result<()> {
     loop {
@@ -22,6 +23,13 @@ fn main() -> std::io::Result<()> {
             Some("cd") => {
                 let dir = parts.next().unwrap_or(".");
                 commands::cd::cd_command(dir)?;
+            },
+            Some("pwd") => {
+                commands::pwd::pwd_command().expect("Error reading the line");
+            },
+            Some("mkdir") => {
+                let dir = parts.next().unwrap_or(".");
+                commands::mkdir::mkdir_command(dir)?;
             },
             Some("exit") => {
                 break;
