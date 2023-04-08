@@ -9,6 +9,7 @@ mod commands {
     pub mod help;
     pub mod rm;
     pub mod mv;
+    pub mod cat;
 }
 
 fn main() -> std::io::Result<()> {
@@ -42,6 +43,10 @@ fn main() -> std::io::Result<()> {
             Some("mkdir") => {
                 let dir = parts.next().unwrap_or(".");
                 commands::mkdir::mkdir_command(dir)?;
+            },
+            Some("cat") => {
+                let dir = parts.next().unwrap_or(".");
+                commands::cat::cat_command(dir)?;
             },
             Some("mv") => {
                 let file = parts.next().unwrap_or(".");

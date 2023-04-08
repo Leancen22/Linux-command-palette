@@ -8,12 +8,14 @@
 - [x] help
 - [x] mv
 - [ ] cp
-- [ ] cat
+- [x] cat
 - [x] touch 
 - [x] pwd
 - [x] exit
+- [ ] vi
 
 # Otros pendientes:
+- [ ] Ajustar errores al crear archivos y carpetas del mismo nombre (se revisa en mkdir)
 - [ ] Mostrar posicion actual en cada momento
 - [ ] Estructurar los comandos en struct
 - [ ] Alias para las funciones y flags --> por ejemplo: "-r" para "rm -r"
