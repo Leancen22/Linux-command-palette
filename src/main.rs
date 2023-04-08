@@ -6,6 +6,9 @@ mod commands {
     pub mod mkdir;
     pub mod pwd;
     pub mod touch;
+    pub mod help;
+    pub mod rm;
+    pub mod mv;
 }
 
 fn main() -> std::io::Result<()> {
@@ -25,6 +28,10 @@ fn main() -> std::io::Result<()> {
                 let dir = parts.next().unwrap_or(".");
                 commands::cd::cd_command(dir)?;
             },
+            Some("rm") => {
+                let dir = parts.next().unwrap_or(".");
+                commands::rm::rm_command(dir)?;
+            },
             Some("touch") => {
                 let dir = parts.next().unwrap_or(".");
                 commands::touch::touch_command(dir)?;
@@ -36,9 +43,17 @@ fn main() -> std::io::Result<()> {
                 let dir = parts.next().unwrap_or(".");
                 commands::mkdir::mkdir_command(dir)?;
             },
+            Some("mv") => {
+                let file = parts.next().unwrap_or(".");
+                let directory = parts.next().unwrap_or(".");
+                commands::mv::mv_command(file, directory)?;
+            }
             Some("exit") => {
                 break;
             },
+            Some("help") => {
+                commands::help::help_command();
+            },  
             Some(command) => {
                 println!("Unknown command: {}", command);
             },

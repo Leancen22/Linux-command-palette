@@ -4,10 +4,10 @@
 - [x] cd
 - [x] ls
 - [x] mkdir
-- [ ] rm
+- [x] rm
 - [ ] rm -r
-- [ ] help
-- [ ] mv
+- [x] help
+- [x] mv
 - [ ] cp
 - [ ] cat
 - [x] touch 
