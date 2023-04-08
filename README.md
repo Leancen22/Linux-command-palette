@@ -14,6 +14,9 @@
 - [ ] pwd
 - [x] exit
 
+# Otros pendientes:
+- [ ] Mostrar posicion actual en cada momento
+
 # Instalacion del proyecto:
 
     git clone ...
