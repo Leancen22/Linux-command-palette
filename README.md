@@ -12,6 +12,7 @@
 - [ ] cat
 - [ ] touch 
 - [ ] pwd
+- [x] exit
 
 # Instalacion del proyecto:
 
