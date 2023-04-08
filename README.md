@@ -10,7 +10,7 @@
 - [ ] mv
 - [ ] cp
 - [ ] cat
-- [ ] touch 
+- [x] touch 
 - [x] pwd
 - [x] exit
 

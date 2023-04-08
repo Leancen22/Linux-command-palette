@@ -5,6 +5,7 @@ mod commands {
     pub mod cd;
     pub mod mkdir;
     pub mod pwd;
+    pub mod touch;
 }
 
 fn main() -> std::io::Result<()> {
@@ -23,6 +24,10 @@ fn main() -> std::io::Result<()> {
             Some("cd") => {
                 let dir = parts.next().unwrap_or(".");
                 commands::cd::cd_command(dir)?;
+            },
+            Some("touch") => {
+                let dir = parts.next().unwrap_or(".");
+                commands::touch::touch_command(dir)?;
             },
             Some("pwd") => {
                 commands::pwd::pwd_command().expect("Error reading the line");
