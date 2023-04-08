@@ -7,7 +7,7 @@
 - [x] rm  <-- Actualmente tambien borra carpetas.
 - [x] help
 - [x] mv
-- [ ] cp
+- [x] cp
 - [x] cat
 - [x] touch 
 - [x] pwd

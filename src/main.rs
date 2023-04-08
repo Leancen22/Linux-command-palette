@@ -1,4 +1,7 @@
 use std::io::{self, Write};
+use std::fs;
+use std::env;
+use std::path::{Path};
 
 mod commands {
     pub mod ls;
@@ -10,6 +13,7 @@ mod commands {
     pub mod rm;
     pub mod mv;
     pub mod cat;
+    pub mod cp;
 }
 
 fn main() -> std::io::Result<()> {
@@ -29,6 +33,11 @@ fn main() -> std::io::Result<()> {
                 let dir = parts.next().unwrap_or(".");
                 commands::cd::cd_command(dir)?;
             },
+            Some("cp") => {
+                let file = parts.next().unwrap_or(".");
+                let directory = parts.next().unwrap_or(".");
+                commands::cp::cp_command(file, directory)?;
+            }
             Some("rm") => {
                 let dir = parts.next().unwrap_or(".");
                 commands::rm::rm_command(dir)?;
