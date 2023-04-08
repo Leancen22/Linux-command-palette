@@ -4,8 +4,7 @@
 - [x] cd
 - [x] ls
 - [x] mkdir
-- [x] rm
-- [ ] rm -r
+- [x] rm  <-- Actualmente tambien borra carpetas.
 - [x] help
 - [x] mv
 - [ ] cp
@@ -17,7 +16,7 @@
 # Otros pendientes:
 - [ ] Mostrar posicion actual en cada momento
 - [ ] Estructurar los comandos en struct
-- [ ] Alias para las funciones y flags
+- [ ] Alias para las funciones y flags --> por ejemplo: "-r" para "rm -r"
 
 # Instalacion del proyecto:
 
