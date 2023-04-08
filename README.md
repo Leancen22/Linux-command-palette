@@ -16,6 +16,8 @@
 
 # Otros pendientes:
 - [ ] Mostrar posicion actual en cada momento
+- [ ] Estructurar los comandos en struct
+- [ ] Alias para las funciones y flags
 
 # Instalacion del proyecto:
 
