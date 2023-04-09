@@ -14,6 +14,7 @@ mod commands {
     pub mod mv;
     pub mod cat;
     pub mod cp;
+    pub mod vi;
 }
 
 fn main() -> std::io::Result<()> {
@@ -41,6 +42,10 @@ fn main() -> std::io::Result<()> {
             Some("rm") => {
                 let dir = parts.next().unwrap_or(".");
                 commands::rm::rm_command(dir)?;
+            },
+            Some("vi") => {
+                let dir = parts.next().unwrap_or(".");
+                commands::vi::vi_command(dir)?;
             },
             Some("touch") => {
                 let dir = parts.next().unwrap_or(".");

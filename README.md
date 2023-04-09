@@ -12,8 +12,8 @@
 - [x] touch 
 - [x] pwd
 - [x] exit
-- [ ] vi
-
+- [x] vi <-- Actualmente solo puede leer archivos de texto y agregar texto, no borrar.
+ 
 # Otros pendientes:
 - [ ] Ajustar errores al crear archivos y carpetas del mismo nombre (se revisa en mkdir)
 - [ ] Mostrar posicion actual en cada momento
